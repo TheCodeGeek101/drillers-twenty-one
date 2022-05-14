@@ -3,7 +3,7 @@
     <section class="showcase bg-fixed bg-cover">
         <div class="container">
                 <div class= "text" >
-                     <h2 class= "heading-primary font-bold text-4xl font-custom main-header  uppercase">
+                     <h2 class= "animate-pulse transition duration-500 ease-in heading-primary font-bold text-4xl font-custom main-header  uppercase">
                         <span class="heading-primary-main">Music is the best solution</span>
                         <span class="heading-primary-sub">to any problem</span>
                          </h2>
@@ -11,7 +11,7 @@
 					 <div class="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
          
 
-                <button class="w-full px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">Get started</button>
+                <button class="w-full custom-button  px-5 py-4 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">Get started</button>
             </div>
 				</div>
         </div>
@@ -55,7 +55,13 @@
     }
 
 @media screen and (max-width: 990px){
-
+    .text{
+        postion:absolute;
+        top:20%;
+    }
+    .custom-button{
+        display:none;
+    }
 
     .showcase{
         background-position:top;
@@ -82,7 +88,7 @@
         /* color: white; */
         left:17.5%;
         font-size: 19px;
-        top:13%;
+        
         text-align: center;
         backface-visibility: hidden;
       }
@@ -94,7 +100,7 @@
     color:transparent;
     /* font-family: w3-Cursive; */
     -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom,gold,transparent);
+    background-image: linear-gradient(to bottom,white,transparent);
     text-transform: uppercase;
     /* animation-name: moveInLeft; */
     /* animation-duration: 5s; */
